@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- LCP Optimization: Preload Hero Image (Huge 15MB file) -->
+    <link rel="preload" as="image" href="Imagens e videos/223FB084-B3B6-44FE-896C-0A1E2ABB14C9.JPG.jpeg">
 </head>
 <body>
     <div class="grain-overlay"></div>
@@ -126,8 +129,9 @@
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <a href="https://www.instagram.com/qbianca" target="_blank" class="project-card reveal group-hoverable" style="text-decoration: none;">
-                        <div class="project-image" style="background-image: url('Imagens e videos/IMG_9951.JPG.jpeg'); background-position: center top;">
-                            <div class="reveal-overlay">
+                        <div class="project-image">
+                            <img src="Imagens e videos/IMG_9951.JPG.jpeg" loading="lazy" decoding="async" alt="Campanhas Nacionais" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position: center top; z-index: 0;">
+                            <div class="reveal-overlay" style="z-index: 1;">
                                 <span class="reveal-text">Ver no Instagram ⤨</span>
                             </div>
                         </div>
@@ -140,8 +144,9 @@
 
                     <!-- Project 2 -->
                     <a href="https://instagram.com/qboficial" target="_blank" class="project-card reveal group-hoverable" style="text-decoration: none;">
-                        <div class="project-image" style="background-image: url('Imagens e videos/IMG_1948.jpg');">
-                            <div class="reveal-overlay">
+                        <div class="project-image">
+                            <img src="Imagens e videos/IMG_1948.jpg" loading="lazy" decoding="async" alt="Identidade Oficial" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index: 0;">
+                            <div class="reveal-overlay" style="z-index: 1;">
                                 <span class="reveal-text">Ver Marca Oficial ⤨</span>
                             </div>
                         </div>
@@ -154,8 +159,9 @@
 
                     <!-- Project 3 -->
                     <a href="https://www.instagram.com/qbianca/reels/" target="_blank" class="project-card reveal group-hoverable" style="text-decoration: none;">
-                        <div class="project-image" style="background-image: url('Imagens e videos/IMG_5770.jpg');">
-                            <div class="reveal-overlay">
+                        <div class="project-image">
+                            <img src="Imagens e videos/IMG_5770.jpg" loading="lazy" decoding="async" alt="Manifesto Seja Real" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index: 0;">
+                            <div class="reveal-overlay" style="z-index: 1;">
                                 <span class="reveal-text">Assistir Manifesto ⤨</span>
                             </div>
                         </div>
@@ -219,19 +225,19 @@
             <div class="vault-scroll-container">
                 <!-- Snap Items using unused photos -->
                 <div class="vault-item">
-                    <img src="Imagens e videos/B71E4E2C-9D15-429A-89F2-DC0E6281838E.JPG.jpeg" alt="Editorial Capture 01">
+                    <img src="Imagens e videos/B71E4E2C-9D15-429A-89F2-DC0E6281838E.JPG.jpeg" loading="lazy" decoding="async" alt="Editorial Capture 01">
                     <div class="vault-meta">[ ARQUIVO . 01 ]</div>
                 </div>
                 <div class="vault-item">
-                    <img src="Imagens e videos/IMG_2465.JPEG" alt="Editorial Capture 02">
+                    <img src="Imagens e videos/IMG_2465.JPEG" loading="lazy" decoding="async" alt="Editorial Capture 02">
                     <div class="vault-meta">[ ARQUIVO . 02 ]</div>
                 </div>
                 <div class="vault-item">
-                    <img src="Imagens e videos/IMG_8054.jpg" alt="Editorial Capture 03">
+                    <img src="Imagens e videos/IMG_8054.jpg" loading="lazy" decoding="async" alt="Editorial Capture 03">
                     <div class="vault-meta">[ ARQUIVO . 03 ]</div>
                 </div>
                 <div class="vault-item">
-                    <img src="Imagens e videos/IMG_4926.jpg" alt="Editorial Capture 04">
+                    <img src="Imagens e videos/IMG_4926.jpg" loading="lazy" decoding="async" alt="Editorial Capture 04">
                     <div class="vault-meta">[ ARQUIVO . 04 ]</div>
                 </div>
             </div>
